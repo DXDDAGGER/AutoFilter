@@ -18,9 +18,9 @@ def is_enabled(value, default):
 # Bot Information Configuration
 # ============================
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '6674102'))
+API_HASH = environ.get('API_HASH', '1ca8fedb9d767db9f162054fc42bc4b4')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7736569485:AAEA9F26eCFfCJsaiP9UortK0mmAy_iDoBA")
 
 # ============================
 # Bot Settings Configuration
@@ -28,28 +28,28 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://envs.sh/WdA.jpg https://envs.sh/Wdj.jpg')).split()  # Sample pic
-NOR_IMG = environ.get("NOR_IMG", "https://envs.sh/Wdj.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://envs.sh/Wdj.jpg")
-SPELL_IMG = environ.get("SPELL_IMG", "https://envs.sh/Wdj.jpg")
-SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://envs.sh/Wdj.jpg'))
-FSUB_PICS = (environ.get('FSUB_PICS', 'https://envs.sh/Wdj.jpg')).split()  # Fsub pic
+PICS = (environ.get('PICS', 'https://envs.sh/ifA.jpg https://envs.sh/b25.jpg https://envs.sh/b2G.jpg https://envs.sh/b2z.jpg https://envs.sh/b2K.jpg https://envs.sh/b23.jpg https://envs.sh/b2C.jpg')).split()  # Sample pic
+NOR_IMG = environ.get("NOR_IMG", "https://envs.sh/if_.jpg")
+MELCOW_VID = environ.get("MELCOW_VID", "https://files.catbox.moe/095ie9.mp4")
+SPELL_IMG = environ.get("SPELL_IMG", "https://files.catbox.moe/jzz1os.jpg")
+SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://files.catbox.moe/iida7a.jpg'))
+FSUB_PICS = (environ.get('FSUB_PICS', 'https://envs.sh/ifj.jpg')).split()  # Fsub pic
 
 # ============================
 # Admin, Channels & Users Configuration
 # ============================
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6497757690').split()] # Replace with the actual admin ID(s) to add
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001619818259').split()]  # Channel id for auto indexing (make sure bot is admin)
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001868871195'))  # Log channel id (make sure bot is admin)
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1001868871195'))  # Bin channel id (make sure bot is admin)
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1001868871195'))  # Notification of those who verify will be sent to your channel
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1001868871195'))  # Premium logs channel id
-auth_channel = environ.get('AUTH_CHANNEL', '-1001572271892')  # Channel/Group ID for force sub (make sure bot is admin)
-DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1324630114').split()] # Replace with the actual admin ID(s) to add
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002756427466').split()]  # Channel id for auto indexing (make sure bot is admin)
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002546287361'))  # Log channel id (make sure bot is admin)
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002848411735'))  # Bin channel id (make sure bot is admin)
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002756427466'))  # Notification of those who verify will be sent to your channel
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002546287361'))  # Premium logs channel id
+auth_channel = environ.get('AUTH_CHANNEL', '-1002682128156')  # Channel/Group ID for force sub (make sure bot is admin)
+DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002848411735').split()]
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '')  # Support group id (make sure bot is admin)
 reqst_channel = environ.get('REQST_CHANNEL_ID', '')  # Request channel id (make sure bot is admin)
-AUTH_CHANNEL = [int(fch) if id_pattern.search(fch) else fch for fch in environ.get('AUTH_CHANNEL', '-1001572271892').split()]
-MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-1001572271892').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
+AUTH_CHANNEL = [int(fch) if id_pattern.search(fch) else fch for fch in environ.get('AUTH_CHANNEL', '-1002682128156').split()]
+MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-4840392045').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
 
 
 # ============================
@@ -59,7 +59,7 @@ QR_CODE = environ.get('QR_CODE', 'https://envs.sh/Wdj.jpg')
 OWNER_UPI_ID = environ.get('OWNER_UPI_ID', '@fam')
 
 #Auto approve 
-CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '').split()]
+CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '1324630114').split()]
 TEXT = environ.get("APPROVED_WELCOME_TEXT", "<b>{mention},\n\nʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ {title} ɪs ᴀᴘᴘʀᴏᴠᴇᴅ.\n\‣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @codflix_bots</b>")
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
@@ -67,7 +67,7 @@ APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 # ============================
 # MongoDB Configuration
 # ============================
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://sreeharipradeep38:Fxfkkqb1deS33vDA@cluster0.uei2df5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "yato")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Lucy_files')
@@ -99,18 +99,18 @@ IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 # ============================
 # Channel & Group Links Configuration
 # ============================
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/movie7xchat')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/nova_flix')
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/cosmic_freak')
-MOVIE_UPDATE_CHANNEL_LNK = environ.get('MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/nova_flix')
-OWNERID = int(os.environ.get('OWNERID', '6497757690'))  # Replace with the actual admin ID
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+WLpFwcXq9C42MzI9')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+-mQfm_FEeHphOWE9')
+OWNER_LNK = environ.get('OWNER_LNK', '@Sree_Hari_123')
+MOVIE_UPDATE_CHANNEL_LNK = environ.get('MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/+-mQfm_FEeHphOWE9')
+OWNERID = int(os.environ.get('OWNERID', '1324630114'))  # Replace with the actual admin ID
 
 # ============================
 # User Configuration
 # ============================
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1324630114').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
+PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '1324630114').split()]
 
 # ============================
 # Miscellaneous Configuration
